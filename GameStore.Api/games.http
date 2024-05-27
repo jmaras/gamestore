@@ -1,0 +1,35 @@
+GET http://localhost:5194/games
+
+###
+
+GET http://localhost:5194/games/2
+
+###
+
+POST http://localhost:5194/games/
+Content-Type: application/json
+
+{
+    "name": "Elden Ring",
+    "genre": "Action-RPG",
+    "price": 59.99,
+    "releaseDate": "2022-02-25"
+}
+
+###
+
+PUT http://localhost:5194/games/4
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "Red Dead Redemption 2",
+  "genre": "Action-Adventure",
+  "price": 39.99,
+  "releaseDate": "2018-10-26"
+}
+
+###
+
+DELETE http://localhost:5194/games/2
+Content-Type: application/json
